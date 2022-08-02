@@ -6,6 +6,10 @@ inputs:
     description: 'GITHUB_TOKEN'
     default: '${{ github.token }}'
 
+  only_sniff_diff:
+    description: 'Only execute the sniff on changed files.'
+    default: true 
+
   ### Flags for reviewdog ###
   level:
     description: 'Report level for reviewdog [info,warning,error]'
